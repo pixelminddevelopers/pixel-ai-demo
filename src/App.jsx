@@ -46,7 +46,7 @@ const G = () => (
       background:var(--void);
       font-family:'Plus Jakarta Sans',sans-serif;
       color:var(--t1);
-      overflow:hidden;
+      overflow:auto;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
     }
@@ -769,7 +769,7 @@ export default function App() {
             transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
             className="flex-shrink-0 flex flex-col overflow-y-auto"
             style={{
-              width: 440,
+              width: 380,
               padding: "28px 22px",
               borderRight: "1px solid var(--bd0)",
               background: "linear-gradient(180deg,rgba(7,9,15,0.92) 0%,rgba(7,9,15,0.96) 100%)",
@@ -815,10 +815,10 @@ export default function App() {
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}>
-                <h1 className="ff-display font-bold leading-[1.06] mb-1" style={{ fontSize: 40 }}>
+                <h1 className="ff-display font-bold leading-[1.06] mb-1" style={{ fontSize: 34 }}>
                   <span className="gt">Pixel AI</span>
                 </h1>
-                <h2 className="ff-display font-bold leading-[1.1] mb-5" style={{ fontSize: 26, color: "var(--t1)" }}>
+                <h2 className="ff-display font-bold leading-[1.1] mb-5" style={{ fontSize: 22, color: "var(--t1)" }}>
                   AI Systems That Convert<br />Visitors Into Revenue
                 </h2>
               </motion.div>
